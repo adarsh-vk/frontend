@@ -1,39 +1,108 @@
 import React from 'react'
+import './Login.css';
 import image from "../../../Images/Login-logo.png"
+import { useFormik } from "formik";
+import * as Yup from "yup";
 
-const cmpnyLogin = () => {
+
+function CmpnyLogin() {
+  
+  function click() {
+    // toggle the type attribute
+    const togglePassword = document.querySelector("#togglePassword");
+    const passwordV = document.querySelector("#password");
+    const type =
+      passwordV.getAttribute("type") === "password" ? "text" : "password";
+    togglePassword.classNameName === "fa fa-eye viewpass mr-4 text-muted"
+      ? (document.getElementById("togglePassword").classNameName =
+          "fa fa-eye-slash viewpass mr-4 text-muted")
+      : (document.getElementById("togglePassword").classNameName =
+          "fa fa-eye viewpass mr-4 text-muted");
+    passwordV.setAttribute("type", type);
+  }
+
+  
+  const initialValues = {
+    phone: "",
+    password: "",
+  };
+
+  const onSubmit = (values) => {};
+
+  const validationSchema = Yup.object({
+  
+    phone: Yup.string()
+      .required("phone number is required")
+      .matches(/^\d+$/, "Phone number must contain only numbers")
+      .min(10, "Phone number must be at least 10 characters"),
+    password: Yup.string()
+      .required("Please enter your password")
+      .matches(
+        /^.*(?=.{8,})((?=.*[!@#$%^&*()\-_=+{};:,<.>]){1})(?=.*\d)((?=.*[a-z]){1})((?=.*[A-Z]){1}).*$/,
+        "Password must contain at least 8 characters, one uppercase, one number and one special case character"
+      ),
+    
+  });
+
+  const formik = useFormik({
+    initialValues,
+    onSubmit,
+    validationSchema,
+  });
+
   return (
     <div>
-      <div class="wrapper">
-        <div class="logo">
+      <div className="wrapper">
+        <div className="logo">
           <img src={image} alt="logo" />
         </div>
-        <div class="text-center mt-4 name">Parkease</div>
-        <form class="p-3 mt-3">
-          <div class="form-field d-flex align-items-center">
-            <span class="far fa-user"></span>
+        <div className="text-center mt-4 name">Parkease</div>
+        <form className="p-3 mt-3" onSubmit={formik.handleSubmit}>
+         
+          <div className="form-field d-flex align-items-center">
+            <span className="fas fa-mobile"></span>
             <input
               type="text"
-              name="userName"
-              id="userName"
-              placeholder="Username"
+              name="phone"
+              id="phone"
+              placeholder="Phone number"
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+              value={formik.values.phone}
             />
           </div>
-          <div class="form-field d-flex align-items-center">
-            <span class="fas fa-key"></span>
+          {formik.touched.phone && formik.errors.phone ? (
+            <div className="error">{formik.errors.phone}</div>
+          ) : null}
+          <div className="form-field d-flex align-items-center">
+            <span className="fas fa-key"></span>
             <input
               type="password"
               name="password"
-              id="pwd"
+              id="password"
               placeholder="Password"
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+              value={formik.values.password}
             />
+             <i
+              className="fa fa-eye viewpass mr-4 text-muted"
+              onClick={click}
+              id="togglePassword"
+            ></i>
           </div>
-          <button class="btn mt-3">Login</button>
+          {formik.touched.password && formik.errors.password ? (
+            <div className="error">{formik.errors.password}</div>
+          ) : null}
+          
+          <button className="btn mt-3" type="submit">
+           Log in
+          </button>
         </form>
-       
+        
       </div>
     </div>
-  )
+  );
 }
 
-export default cmpnyLogin
+export default CmpnyLogin

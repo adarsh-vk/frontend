@@ -4,24 +4,25 @@ import "./Body.css";
 export const Body = () => {
   return (
     <div>
-      <div class="text">
-        <span>Hi Welcome User!</span>
+      <div className="text ">
+        <center><span>Hi Welcome User!</span> </center>
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 card-margin">
-            <div class="card search-form">
-              <div class="card-body p-0">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-12 card-margin">
+            <div className="card search-form">
+              <div className="card-body p-0">
                 <form id="search-form">
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="row no-gutters">
-                        <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                  <div className="row">
+                    <div className="col-12">
+                      <div className="row no-gutters">
+                        <div className="col-lg-3 col-md-3 col-sm-12 p-0">
+                        
                           <select
-                            class="form-control"
+                            className="form-control"
                             id="exampleFormControlSelect1"
                           >
-                            <option>Location</option>
+                            <option>Location </option>
                             <option>London</option>
                             <option>Boston</option>
                             <option>Mumbai</option>
@@ -29,18 +30,19 @@ export const Body = () => {
                             <option>Toronto</option>
                             <option>Paris</option>
                           </select>
+                          
                         </div>
-                        <div class="col-lg-8 col-md-6 col-sm-12 p-0">
+                        <div className="col-lg-8 col-md-6 col-sm-12 p-0">
                           <input
                             type="text"
                             placeholder="Search..."
-                            class="form-control"
+                            className="form-control"
                             id="search"
                             name="search"
                           />
                         </div>
-                        <div class="col-lg-1 col-md-3 col-sm-12 p-0">
-                          <button type="submit" class="btn btn-base">
+                        <div className="col-lg-1 col-md-3 col-sm-12 p-0">
+                          <button type="submit" className="btn btn-base">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="24"
@@ -51,7 +53,7 @@ export const Body = () => {
                               stroke-width="2"
                               stroke-linecap="round"
                               stroke-linejoin="round"
-                              class="feather feather-search"
+                              className="feather feather-search"
                             >
                               <circle cx="11" cy="11" r="8"></circle>
                               <line
@@ -71,26 +73,26 @@ export const Body = () => {
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-12">
-            <div class="card card-margin">
-              <div class="card-body">
-                <div class="row search-body">
-                  <div class="col-lg-12">
-                    <div class="search-result">
-                      <div class="result-header">
-                        <div class="row">
-                          <div class="col-lg-6">
-                            <div class="records">
+        <div className="row">
+          <div className="col-12">
+            <div className="card card-margin">
+              <div className="card-body">
+                <div className="row search-body">
+                  <div className="col-lg-12">
+                    <div className="search-result">
+                      <div className="result-header">
+                        <div className="row">
+                          <div className="col-lg-6">
+                            <div className="records">
                               Showing: <b>1-20</b> of <b>200</b> result
                             </div>
                           </div>
-                          <div class="col-lg-6">
-                            <div class="result-actions">
-                              <div class="result-sorting">
+                          <div className="col-lg-6">
+                            <div className="result-actions">
+                              <div className="result-sorting">
                                 <span>Sort By:</span>
                                 <select
-                                  class="form-control border-0"
+                                  className="form-control border-0"
                                   id="exampleOption"
                                 >
                                   <option value="1">Relevance</option>
@@ -98,10 +100,10 @@ export const Body = () => {
                                   <option value="3">Names (Z-A)</option>
                                 </select>
                               </div>
-                              <div class="result-views">
+                              <div className="result-views">
                                 <button
                                   type="button"
-                                  class="btn btn-soft-base btn-icon"
+                                  className="btn btn-soft-base btn-icon"
                                 >
                                   <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -113,7 +115,7 @@ export const Body = () => {
                                     stroke-width="2"
                                     stroke-linecap="round"
                                     stroke-linejoin="round"
-                                    class="feather feather-list"
+                                    className="feather feather-list"
                                   >
                                     <line x1="8" y1="6" x2="21" y2="6"></line>
                                     <line x1="8" y1="12" x2="21" y2="12"></line>
@@ -125,7 +127,7 @@ export const Body = () => {
                                 </button>
                                 <button
                                   type="button"
-                                  class="btn btn-soft-base btn-icon"
+                                  className="btn btn-soft-base btn-icon"
                                 >
                                   <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -137,7 +139,7 @@ export const Body = () => {
                                     stroke-width="2"
                                     stroke-linecap="round"
                                     stroke-linejoin="round"
-                                    class="feather feather-grid"
+                                    className="feather feather-grid"
                                   >
                                     <rect
                                       x="3"
@@ -170,13 +172,13 @@ export const Body = () => {
                           </div>
                         </div>
                       </div>
-                      <div class="result-body">
-                        <div class="table-responsive">
-                          <table class="table widget-26">
+                      <div className="result-body">
+                        <div className="table-responsive">
+                          <table className="table widget-26">
                             <tbody>
                               <tr>
                                 <td>
-                                  <div class="widget-26-job-emp-img">
+                                  <div className="widget-26-job-emp-img">
                                     <img
                                       src="https://bootdey.com/img/Content/avatar/avatar5.png"
                                       alt="Company"
@@ -184,42 +186,42 @@ export const Body = () => {
                                   </div>
                                 </td>
                                 <td>
-                                  <div class="widget-26-job-title">
+                                  <div className="widget-26-job-title">
                                     <a href="#">
                                       Senior Software Engineer / Developer
                                     </a>
-                                    <p class="m-0">
-                                      <a href="#" class="employer-name">
+                                    <p className="m-0">
+                                      <a href="#" className="employer-name">
                                         Axiom Corp.
                                       </a>{" "}
-                                      <span class="text-muted time">
+                                      <span className="text-muted time">
                                         1 days ago
                                       </span>
                                     </p>
                                   </div>
                                 </td>
                                 <td>
-                                  <div class="widget-26-job-info">
-                                    <p class="type m-0">Full-Time</p>
-                                    <p class="text-muted m-0">
+                                  <div className="widget-26-job-info">
+                                    <p className="type m-0">Full-Time</p>
+                                    <p className="text-muted m-0">
                                       in{" "}
-                                      <span class="location">London, UK</span>
+                                      <span className="location">London, UK</span>
                                     </p>
                                   </div>
                                 </td>
                                 <td>
-                                  <div class="widget-26-job-salary">
+                                  <div className="widget-26-job-salary">
                                     $ 50/hr
                                   </div>
                                 </td>
                                 <td>
-                                  <div class="widget-26-job-category bg-soft-base">
-                                    <i class="indicator bg-base"></i>
+                                  <div className="widget-26-job-category bg-soft-base">
+                                    <i className="indicator bg-base"></i>
                                     <span>Software Development</span>
                                   </div>
                                 </td>
                                 <td>
-                                  <div class="widget-26-job-starred">
+                                  <div className="widget-26-job-starred">
                                     <a href="#">
                                       <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -231,7 +233,7 @@ export const Body = () => {
                                         stroke-width="2"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
-                                        class="feather feather-star"
+                                        className="feather feather-star"
                                       >
                                         <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
                                       </svg>
@@ -241,7 +243,7 @@ export const Body = () => {
                               </tr>
                               <tr>
                                 <td>
-                                  <div class="widget-26-job-emp-img">
+                                  <div className="widget-26-job-emp-img">
                                     <img
                                       src="https://bootdey.com/img/Content/avatar/avatar2.png"
                                       alt="Company"
@@ -249,42 +251,42 @@ export const Body = () => {
                                   </div>
                                 </td>
                                 <td>
-                                  <div class="widget-26-job-title">
+                                  <div className="widget-26-job-title">
                                     <a href="#">
                                       Marketing &amp; Communication Supervisor
                                     </a>
-                                    <p class="m-0">
-                                      <a href="#" class="employer-name">
+                                    <p className="m-0">
+                                      <a href="#" className="employer-name">
                                         AxiomUI Llc.
                                       </a>{" "}
-                                      <span class="text-muted time">
+                                      <span className="text-muted time">
                                         2 days ago
                                       </span>
                                     </p>
                                   </div>
                                 </td>
                                 <td>
-                                  <div class="widget-26-job-info">
-                                    <p class="type m-0">Part-Time</p>
-                                    <p class="text-muted m-0">
+                                  <div className="widget-26-job-info">
+                                    <p className="type m-0">Part-Time</p>
+                                    <p className="text-muted m-0">
                                       in{" "}
-                                      <span class="location">New York, US</span>
+                                      <span className="location">New York, US</span>
                                     </p>
                                   </div>
                                 </td>
                                 <td>
-                                  <div class="widget-26-job-salary">
+                                  <div className="widget-26-job-salary">
                                     $ 60/hr
                                   </div>
                                 </td>
                                 <td>
-                                  <div class="widget-26-job-category bg-soft-warning">
-                                    <i class="indicator bg-warning"></i>
+                                  <div className="widget-26-job-category bg-soft-warning">
+                                    <i className="indicator bg-warning"></i>
                                     <span>Marketing</span>
                                   </div>
                                 </td>
                                 <td>
-                                  <div class="widget-26-job-starred">
+                                  <div className="widget-26-job-starred">
                                     <a href="#">
                                       <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -296,7 +298,7 @@ export const Body = () => {
                                         stroke-width="2"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
-                                        class="feather feather-star"
+                                        className="feather feather-star"
                                       >
                                         <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
                                       </svg>
@@ -306,7 +308,7 @@ export const Body = () => {
                               </tr>
                               <tr>
                                 <td>
-                                  <div class="widget-26-job-emp-img">
+                                  <div className="widget-26-job-emp-img">
                                     <img
                                       src="https://bootdey.com/img/Content/avatar/avatar3.png"
                                       alt="Company"
@@ -314,42 +316,42 @@ export const Body = () => {
                                   </div>
                                 </td>
                                 <td>
-                                  <div class="widget-26-job-title">
+                                  <div className="widget-26-job-title">
                                     <a href="#">
                                       Senior Data Analyst / Scientist
                                     </a>
-                                    <p class="m-0">
-                                      <a href="#" class="employer-name">
+                                    <p className="m-0">
+                                      <a href="#" className="employer-name">
                                         AxiomUI Inc.
                                       </a>{" "}
-                                      <span class="text-muted time">
+                                      <span className="text-muted time">
                                         4 days ago
                                       </span>
                                     </p>
                                   </div>
                                 </td>
                                 <td>
-                                  <div class="widget-26-job-info">
-                                    <p class="type m-0">Part-Time</p>
-                                    <p class="text-muted m-0">
+                                  <div className="widget-26-job-info">
+                                    <p className="type m-0">Part-Time</p>
+                                    <p className="text-muted m-0">
                                       in{" "}
-                                      <span class="location">New York, US</span>
+                                      <span className="location">New York, US</span>
                                     </p>
                                   </div>
                                 </td>
                                 <td>
-                                  <div class="widget-26-job-salary">
+                                  <div className="widget-26-job-salary">
                                     $ 60/hr
                                   </div>
                                 </td>
                                 <td>
-                                  <div class="widget-26-job-category bg-soft-success">
-                                    <i class="indicator bg-success"></i>
+                                  <div className="widget-26-job-category bg-soft-success">
+                                    <i className="indicator bg-success"></i>
                                     <span>Artificial Intelligence</span>
                                   </div>
                                 </td>
                                 <td>
-                                  <div class="widget-26-job-starred">
+                                  <div className="widget-26-job-starred">
                                     <a href="#">
                                       <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -361,7 +363,7 @@ export const Body = () => {
                                         stroke-width="2"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
-                                        class="feather feather-star"
+                                        className="feather feather-star"
                                       >
                                         <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
                                       </svg>
@@ -371,7 +373,7 @@ export const Body = () => {
                               </tr>
                               <tr>
                                 <td>
-                                  <div class="widget-26-job-emp-img">
+                                  <div className="widget-26-job-emp-img">
                                     <img
                                       src="https://bootdey.com/img/Content/avatar/avatar4.png"
                                       alt="Company"
@@ -379,42 +381,42 @@ export const Body = () => {
                                   </div>
                                 </td>
                                 <td>
-                                  <div class="widget-26-job-title">
+                                  <div className="widget-26-job-title">
                                     <a href="#">
                                       UX Designer &amp; UI Developer
                                     </a>
-                                    <p class="m-0">
-                                      <a href="#" class="employer-name">
+                                    <p className="m-0">
+                                      <a href="#" className="employer-name">
                                         AxiomUI Inc.
                                       </a>{" "}
-                                      <span class="text-muted time">
+                                      <span className="text-muted time">
                                         5 days ago
                                       </span>
                                     </p>
                                   </div>
                                 </td>
                                 <td>
-                                  <div class="widget-26-job-info">
-                                    <p class="type m-0">Part-Time</p>
-                                    <p class="text-muted m-0">
+                                  <div className="widget-26-job-info">
+                                    <p className="type m-0">Part-Time</p>
+                                    <p className="text-muted m-0">
                                       in{" "}
-                                      <span class="location">Toronto, CAN</span>
+                                      <span className="location">Toronto, CAN</span>
                                     </p>
                                   </div>
                                 </td>
                                 <td>
-                                  <div class="widget-26-job-salary">
+                                  <div className="widget-26-job-salary">
                                     $ 35/hr
                                   </div>
                                 </td>
                                 <td>
-                                  <div class="widget-26-job-category bg-soft-danger">
-                                    <i class="indicator bg-danger"></i>
+                                  <div className="widget-26-job-category bg-soft-danger">
+                                    <i className="indicator bg-danger"></i>
                                     <span>Design</span>
                                   </div>
                                 </td>
                                 <td>
-                                  <div class="widget-26-job-starred">
+                                  <div className="widget-26-job-starred">
                                     <a href="#">
                                       <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -426,7 +428,7 @@ export const Body = () => {
                                         stroke-width="2"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
-                                        class="feather feather-star"
+                                        className="feather feather-star"
                                       >
                                         <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
                                       </svg>
@@ -436,7 +438,7 @@ export const Body = () => {
                               </tr>
                               <tr>
                                 <td>
-                                  <div class="widget-26-job-emp-img">
+                                  <div className="widget-26-job-emp-img">
                                     <img
                                       src="https://bootdey.com/img/Content/avatar/avatar5.png"
                                       alt="Company"
@@ -444,42 +446,42 @@ export const Body = () => {
                                   </div>
                                 </td>
                                 <td>
-                                  <div class="widget-26-job-title">
+                                  <div className="widget-26-job-title">
                                     <a href="#">
                                       Information Security Analyst / Expert
                                     </a>
-                                    <p class="m-0">
-                                      <a href="#" class="employer-name">
+                                    <p className="m-0">
+                                      <a href="#" className="employer-name">
                                         Axiom Corp.
                                       </a>{" "}
-                                      <span class="text-muted time">
+                                      <span className="text-muted time">
                                         6 days ago
                                       </span>
                                     </p>
                                   </div>
                                 </td>
                                 <td>
-                                  <div class="widget-26-job-info">
-                                    <p class="type m-0">Part-Time</p>
-                                    <p class="text-muted m-0">
+                                  <div className="widget-26-job-info">
+                                    <p className="type m-0">Part-Time</p>
+                                    <p className="text-muted m-0">
                                       in{" "}
-                                      <span class="location">Mumbai, IN</span>
+                                      <span className="location">Mumbai, IN</span>
                                     </p>
                                   </div>
                                 </td>
                                 <td>
-                                  <div class="widget-26-job-salary">
+                                  <div className="widget-26-job-salary">
                                     $ 70/hr
                                   </div>
                                 </td>
                                 <td>
-                                  <div class="widget-26-job-category bg-soft-info">
-                                    <i class="indicator bg-info"></i>
+                                  <div className="widget-26-job-category bg-soft-info">
+                                    <i className="indicator bg-info"></i>
                                     <span>Infra Supervision</span>
                                   </div>
                                 </td>
                                 <td>
-                                  <div class="widget-26-job-starred">
+                                  <div className="widget-26-job-starred">
                                     <a href="#">
                                       <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -491,7 +493,7 @@ export const Body = () => {
                                         stroke-width="2"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
-                                        class="feather feather-star starred"
+                                        className="feather feather-star starred"
                                       >
                                         <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
                                       </svg>
@@ -501,7 +503,7 @@ export const Body = () => {
                               </tr>
                               <tr>
                                 <td>
-                                  <div class="widget-26-job-emp-img">
+                                  <div className="widget-26-job-emp-img">
                                     <img
                                       src="https://bootdey.com/img/Content/avatar/avatar6.png"
                                       alt="Company"
@@ -509,42 +511,42 @@ export const Body = () => {
                                   </div>
                                 </td>
                                 <td>
-                                  <div class="widget-26-job-title">
+                                  <div className="widget-26-job-title">
                                     <a href="#">
                                       Senior Software Engineer / Developer
                                     </a>
-                                    <p class="m-0">
-                                      <a href="#" class="employer-name">
+                                    <p className="m-0">
+                                      <a href="#" className="employer-name">
                                         Axiom Corp.
                                       </a>{" "}
-                                      <span class="text-muted time">
+                                      <span className="text-muted time">
                                         1 days ago
                                       </span>
                                     </p>
                                   </div>
                                 </td>
                                 <td>
-                                  <div class="widget-26-job-info">
-                                    <p class="type m-0">Full-Time</p>
-                                    <p class="text-muted m-0">
+                                  <div className="widget-26-job-info">
+                                    <p className="type m-0">Full-Time</p>
+                                    <p className="text-muted m-0">
                                       in{" "}
-                                      <span class="location">London, UK</span>
+                                      <span className="location">London, UK</span>
                                     </p>
                                   </div>
                                 </td>
                                 <td>
-                                  <div class="widget-26-job-salary">
+                                  <div className="widget-26-job-salary">
                                     $ 50/hr
                                   </div>
                                 </td>
                                 <td>
-                                  <div class="widget-26-job-category bg-soft-base">
-                                    <i class="indicator bg-base"></i>
+                                  <div className="widget-26-job-category bg-soft-base">
+                                    <i className="indicator bg-base"></i>
                                     <span>Software Development</span>
                                   </div>
                                 </td>
                                 <td>
-                                  <div class="widget-26-job-starred">
+                                  <div className="widget-26-job-starred">
                                     <a href="#">
                                       <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -556,7 +558,7 @@ export const Body = () => {
                                         stroke-width="2"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
-                                        class="feather feather-star"
+                                        className="feather feather-star"
                                       >
                                         <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
                                       </svg>
@@ -566,7 +568,7 @@ export const Body = () => {
                               </tr>
                               <tr>
                                 <td>
-                                  <div class="widget-26-job-emp-img">
+                                  <div className="widget-26-job-emp-img">
                                     <img
                                       src="https://bootdey.com/img/Content/avatar/avatar7.png"
                                       alt="Company"
@@ -574,42 +576,42 @@ export const Body = () => {
                                   </div>
                                 </td>
                                 <td>
-                                  <div class="widget-26-job-title">
+                                  <div className="widget-26-job-title">
                                     <a href="#">
                                       Marketing &amp; Communication Supervisor
                                     </a>
-                                    <p class="m-0">
-                                      <a href="#" class="employer-name">
+                                    <p className="m-0">
+                                      <a href="#" className="employer-name">
                                         AxiomUI Llc.
                                       </a>{" "}
-                                      <span class="text-muted time">
+                                      <span className="text-muted time">
                                         2 days ago
                                       </span>
                                     </p>
                                   </div>
                                 </td>
                                 <td>
-                                  <div class="widget-26-job-info">
-                                    <p class="type m-0">Part-Time</p>
-                                    <p class="text-muted m-0">
+                                  <div className="widget-26-job-info">
+                                    <p className="type m-0">Part-Time</p>
+                                    <p className="text-muted m-0">
                                       in{" "}
-                                      <span class="location">New York, US</span>
+                                      <span className="location">New York, US</span>
                                     </p>
                                   </div>
                                 </td>
                                 <td>
-                                  <div class="widget-26-job-salary">
+                                  <div className="widget-26-job-salary">
                                     $ 60/hr
                                   </div>
                                 </td>
                                 <td>
-                                  <div class="widget-26-job-category bg-soft-warning">
-                                    <i class="indicator bg-warning"></i>
+                                  <div className="widget-26-job-category bg-soft-warning">
+                                    <i className="indicator bg-warning"></i>
                                     <span>Marketing</span>
                                   </div>
                                 </td>
                                 <td>
-                                  <div class="widget-26-job-starred">
+                                  <div className="widget-26-job-starred">
                                     <a href="#">
                                       <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -621,7 +623,7 @@ export const Body = () => {
                                         stroke-width="2"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
-                                        class="feather feather-star"
+                                        className="feather feather-star"
                                       >
                                         <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
                                       </svg>
@@ -631,7 +633,7 @@ export const Body = () => {
                               </tr>
                               <tr>
                                 <td>
-                                  <div class="widget-26-job-emp-img">
+                                  <div className="widget-26-job-emp-img">
                                     <img
                                       src="https://bootdey.com/img/Content/avatar/avatar3.png"
                                       alt="Company"
@@ -639,42 +641,42 @@ export const Body = () => {
                                   </div>
                                 </td>
                                 <td>
-                                  <div class="widget-26-job-title">
+                                  <div className="widget-26-job-title">
                                     <a href="#">
                                       Senior Data Analyst / Scientist
                                     </a>
-                                    <p class="m-0">
-                                      <a href="#" class="employer-name">
+                                    <p className="m-0">
+                                      <a href="#" className="employer-name">
                                         AxiomUI Inc.
                                       </a>{" "}
-                                      <span class="text-muted time">
+                                      <span className="text-muted time">
                                         4 days ago
                                       </span>
                                     </p>
                                   </div>
                                 </td>
                                 <td>
-                                  <div class="widget-26-job-info">
-                                    <p class="type m-0">Part-Time</p>
-                                    <p class="text-muted m-0">
+                                  <div className="widget-26-job-info">
+                                    <p className="type m-0">Part-Time</p>
+                                    <p className="text-muted m-0">
                                       in{" "}
-                                      <span class="location">New York, US</span>
+                                      <span className="location">New York, US</span>
                                     </p>
                                   </div>
                                 </td>
                                 <td>
-                                  <div class="widget-26-job-salary">
+                                  <div className="widget-26-job-salary">
                                     $ 60/hr
                                   </div>
                                 </td>
                                 <td>
-                                  <div class="widget-26-job-category bg-soft-success">
-                                    <i class="indicator bg-success"></i>
+                                  <div className="widget-26-job-category bg-soft-success">
+                                    <i className="indicator bg-success"></i>
                                     <span>Artificial Intelligence</span>
                                   </div>
                                 </td>
                                 <td>
-                                  <div class="widget-26-job-starred">
+                                  <div className="widget-26-job-starred">
                                     <a href="#">
                                       <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -686,7 +688,7 @@ export const Body = () => {
                                         stroke-width="2"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
-                                        class="feather feather-star"
+                                        className="feather feather-star"
                                       >
                                         <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
                                       </svg>
@@ -696,7 +698,7 @@ export const Body = () => {
                               </tr>
                               <tr>
                                 <td>
-                                  <div class="widget-26-job-emp-img">
+                                  <div className="widget-26-job-emp-img">
                                     <img
                                       src="https://bootdey.com/img/Content/avatar/avatar2.png"
                                       alt="Company"
@@ -704,42 +706,42 @@ export const Body = () => {
                                   </div>
                                 </td>
                                 <td>
-                                  <div class="widget-26-job-title">
+                                  <div className="widget-26-job-title">
                                     <a href="#">
                                       UX Designer &amp; UI Developer
                                     </a>
-                                    <p class="m-0">
-                                      <a href="#" class="employer-name">
+                                    <p className="m-0">
+                                      <a href="#" className="employer-name">
                                         AxiomUI Inc.
                                       </a>{" "}
-                                      <span class="text-muted time">
+                                      <span className="text-muted time">
                                         5 days ago
                                       </span>
                                     </p>
                                   </div>
                                 </td>
                                 <td>
-                                  <div class="widget-26-job-info">
-                                    <p class="type m-0">Part-Time</p>
-                                    <p class="text-muted m-0">
+                                  <div className="widget-26-job-info">
+                                    <p className="type m-0">Part-Time</p>
+                                    <p className="text-muted m-0">
                                       in{" "}
-                                      <span class="location">Toronto, CAN</span>
+                                      <span className="location">Toronto, CAN</span>
                                     </p>
                                   </div>
                                 </td>
                                 <td>
-                                  <div class="widget-26-job-salary">
+                                  <div className="widget-26-job-salary">
                                     $ 35/hr
                                   </div>
                                 </td>
                                 <td>
-                                  <div class="widget-26-job-category bg-soft-danger">
-                                    <i class="indicator bg-danger"></i>
+                                  <div className="widget-26-job-category bg-soft-danger">
+                                    <i className="indicator bg-danger"></i>
                                     <span>Design</span>
                                   </div>
                                 </td>
                                 <td>
-                                  <div class="widget-26-job-starred">
+                                  <div className="widget-26-job-starred">
                                     <a href="#">
                                       <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -751,7 +753,7 @@ export const Body = () => {
                                         stroke-width="2"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
-                                        class="feather feather-star"
+                                        className="feather feather-star"
                                       >
                                         <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
                                       </svg>
@@ -761,7 +763,7 @@ export const Body = () => {
                               </tr>
                               <tr>
                                 <td>
-                                  <div class="widget-26-job-emp-img">
+                                  <div className="widget-26-job-emp-img">
                                     <img
                                       src="https://bootdey.com/img/Content/avatar/avatar6.png"
                                       alt="Company"
@@ -769,42 +771,42 @@ export const Body = () => {
                                   </div>
                                 </td>
                                 <td>
-                                  <div class="widget-26-job-title">
+                                  <div className="widget-26-job-title">
                                     <a href="#">
                                       Information Security Analyst / Expert
                                     </a>
-                                    <p class="m-0">
-                                      <a href="#" class="employer-name">
+                                    <p className="m-0">
+                                      <a href="#" className="employer-name">
                                         Axiom Corp.
                                       </a>{" "}
-                                      <span class="text-muted time">
+                                      <span className="text-muted time">
                                         6 days ago
                                       </span>
                                     </p>
                                   </div>
                                 </td>
                                 <td>
-                                  <div class="widget-26-job-info">
-                                    <p class="type m-0">Part-Time</p>
-                                    <p class="text-muted m-0">
+                                  <div className="widget-26-job-info">
+                                    <p className="type m-0">Part-Time</p>
+                                    <p className="text-muted m-0">
                                       in{" "}
-                                      <span class="location">Mumbai, IN</span>
+                                      <span className="location">Mumbai, IN</span>
                                     </p>
                                   </div>
                                 </td>
                                 <td>
-                                  <div class="widget-26-job-salary">
+                                  <div className="widget-26-job-salary">
                                     $ 70/hr
                                   </div>
                                 </td>
                                 <td>
-                                  <div class="widget-26-job-category bg-soft-info">
-                                    <i class="indicator bg-info"></i>
+                                  <div className="widget-26-job-category bg-soft-info">
+                                    <i className="indicator bg-info"></i>
                                     <span>Infra Supervision</span>
                                   </div>
                                 </td>
                                 <td>
-                                  <div class="widget-26-job-starred">
+                                  <div className="widget-26-job-starred">
                                     <a href="#">
                                       <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -816,7 +818,7 @@ export const Body = () => {
                                         stroke-width="2"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
-                                        class="feather feather-star starred"
+                                        className="feather feather-star starred"
                                       >
                                         <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
                                       </svg>
@@ -831,38 +833,38 @@ export const Body = () => {
                     </div>
                   </div>
                 </div>
-                <nav class="d-flex justify-content-center">
-                  <ul class="pagination pagination-base pagination-boxed pagination-square mb-0">
-                    <li class="page-item">
-                      <a class="page-link no-border" href="#">
+                <nav className="d-flex justify-content-center">
+                  <ul className="pagination pagination-base pagination-boxed pagination-square mb-0">
+                    <li className="page-item">
+                      <a className="page-link no-border" href="#">
                         <span aria-hidden="true">«</span>
-                        <span class="sr-only">Previous</span>
+                        <span className="sr-only">Previous</span>
                       </a>
                     </li>
-                    <li class="page-item active">
-                      <a class="page-link no-border" href="#">
+                    <li className="page-item active">
+                      <a className="page-link no-border" href="#">
                         1
                       </a>
                     </li>
-                    <li class="page-item">
-                      <a class="page-link no-border" href="#">
+                    <li className="page-item">
+                      <a className="page-link no-border" href="#">
                         2
                       </a>
                     </li>
-                    <li class="page-item">
-                      <a class="page-link no-border" href="#">
+                    <li className="page-item">
+                      <a className="page-link no-border" href="#">
                         3
                       </a>
                     </li>
-                    <li class="page-item">
-                      <a class="page-link no-border" href="#">
+                    <li className="page-item">
+                      <a className="page-link no-border" href="#">
                         4
                       </a>
                     </li>
-                    <li class="page-item">
-                      <a class="page-link no-border" href="#">
+                    <li className="page-item">
+                      <a className="page-link no-border" href="#">
                         <span aria-hidden="true">»</span>
-                        <span class="sr-only">Next</span>
+                        <span className="sr-only">Next</span>
                       </a>
                     </li>
                   </ul>

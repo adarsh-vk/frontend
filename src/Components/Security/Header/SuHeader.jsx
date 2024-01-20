@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import image from "../../../Images/Image.png";
 
-const AdminHeader = () => {
+const SuHeader = () => {
   return (
     <div>
       <nav
@@ -27,16 +27,16 @@ const AdminHeader = () => {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/admin">
+                <Link
+                  className="nav-link active"
+                  aria-current="page"
+                  to="/security"
+                >
                   Home
                 </Link>
               </li>
               <li className="nav-item">
-                <Link
-                  className="nav-link active"
-                  aria-current="page"
-                  to="/adminlogin"
-                >
+                <Link className="nav-link active" aria-current="page" to="/sulogin">
                   Sign out
                 </Link>
               </li>
@@ -48,4 +48,4 @@ const AdminHeader = () => {
   );
 };
 
-export default AdminHeader;
+export default SuHeader;

@@ -1,0 +1,138 @@
+.update {
+  font-family: Arial, sans-serif;
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Set height to 100% of the viewport height */
+  flex-direction: column;
+  position: relative;
+  bottom: 70px;
+}
+
+.parking-div-sub1,
+.parking-div-sub2 {
+  margin-bottom: 75px;
+  margin-top: 20px;
+}
+
+.parking-info {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  border: 2px solid black;
+  padding: 15px;
+  height: fit-content;
+  width: 990px;
+  text-align: center;
+  background: wheat;
+}
+
+.available {
+  font-weight: bold;
+  margin-bottom: 10px;
+  width: fit-content;
+  position: relative;
+  left: 440px;
+}
+
+.vehicle-type {
+  font-weight: bold;
+  margin: 6px;
+}
+
+.available-slots {
+  font-size: 24px;
+  color: #4caf50; /* Green color for available slots */
+}
+.parking-div button.check-in {
+  background-color: #4caf50; /* Green color for Check-In button */
+}
+
+.parking-div button.check-out {
+  background-color: #ff0000; /* Red color for Check-Out button */
+}
+
+.button-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.parking-div-sub1 {
+  width: 990px;
+  min-width: 540px;
+}
+.parking-div-sub2 {
+  border: 2px solid #000000;
+  padding: 15px;
+  width: 990px;
+  min-width: 540px;
+  background:wheat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+  position: relative;
+  bottom: 80px;
+}
+
+.parking-div button.check-out:hover {
+  background-color: #ff3333; /* Redish touch on hover for Check-Out button */
+}
+
+.parking-div {
+  text-align: center;
+  height: 340px;
+  width: fit-content;
+  background: silver;
+  border: 2px solid black;
+  padding: 15px;
+}
+
+.parking-div h3 {
+  text-align: center;
+  position: relative;
+  bottom: 20px;
+  font-weight: 900;
+}
+
+.parking-div label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.parking-div input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.parking-div button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  width: 48%;
+  margin-right: 4%;
+}
+
+.parking-div button:hover {
+  background-color: #45a049;
+}
+
+.container1 {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  width: fit-content; /* Set the maximum width as per your design */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  border: 2px solid black;
+  background: silver;
+}
